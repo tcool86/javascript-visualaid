@@ -19,7 +19,9 @@ export default class MainEditor extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import url('editorStyle.scss');
 #main-editor {
+  flex: 1;
   margin: 2em;
 }
 </style>
