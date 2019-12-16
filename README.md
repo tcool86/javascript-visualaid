@@ -21,4 +21,4 @@ Standard code editor
 - Pointers/References are spheres.
 - Draw flow direction as lines with arrows. (loops, procedures)
 - Shows stack trace as rectangular prisms.
-- Show memory usage as color. (```diff +green &rarr; !yellow &rarr; -red &rarr; black```)
+- Show memory usage as color. (green &rarr; yellow &rarr; red &rarr; black)
