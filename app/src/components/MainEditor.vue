@@ -1,18 +1,22 @@
 <template>
   <div id="main-editor">
-    <textarea id="code-editor"></textarea>
+    <div id="code-editor" class="editor"></div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import CodeMirror from 'codemirror';
+import ace from 'brace';
+import 'brace/mode/javascript';
+import 'brace/theme/monokai';
 
 @Component
 export default class MainEditor extends Vue {
   mounted() {
-    const textArea = document.getElementById('code-editor');
-    CodeMirror.fromTextArea(textArea, CodeMirror.defaults);
+    const editor = ace.edit('code-editor');
+    editor.getSession().setMode('ace/mode/javascript');
+    editor.setTheme('ace/theme/monokai');
+    editor.clearSelection();
   }
 }
 </script>
@@ -22,6 +26,14 @@ export default class MainEditor extends Vue {
 @import url('editorStyle.scss');
 #main-editor {
   flex: 1;
+  padding: 2em 2em 2em 1em;
+  border-radius: 4px;
   margin: 2em;
+
+  background-color: #2F3129;
+  #code-editor {
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>
