@@ -9,8 +9,8 @@ import { instrumentGLContext } from "@luma.gl/webgl";
 import { Matrix4 } from "math.gl";
 
 export const simpleExample = gl => {
-	instrumentGLContext(gl);
-	const aspect = 1;
+  instrumentGLContext(gl);
+  const aspect = 1;
   const VERTEX_SHADER = `\
 attribute vec3 positions;
 uniform mat4 uMVMatrix;
@@ -89,8 +89,8 @@ void main(void) {
     });
 
   /* global window */
-//   if (typeof window !== "undefined" && !window.website) {
-//     const animationLoop = new AppAnimationLoop();
-//     animationLoop.start();
-//   }
+  //   if (typeof window !== "undefined" && !window.website) {
+  //     const animationLoop = new AppAnimationLoop();
+  //     animationLoop.start();
+  //   }
 };

@@ -7,7 +7,7 @@
 
 <script>
 // @ is an alias to /src
-import MainEditor from "@/components/MainEditor.vue";
+import MainEditor from "@/editor/MainEditor.vue";
 import Visualizer from "@/visualizer/Visualizer.vue";
 
 export default {
