@@ -10,6 +10,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "abstract-syntax-tree": "^2.5.0",
+    "ace-builds": "^1.4.7",
     "codemirror": "^5.49.2",
     "core-js": "^3.4.3",
     "luma.gl": "^7.3.2",
