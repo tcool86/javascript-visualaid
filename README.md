@@ -22,3 +22,12 @@ Standard code editor
 - Draw flow direction as lines with arrows. (loops, procedures)
 - Shows stack trace as rectangular prisms.
 - Show memory usage as color. (green &rarr; yellow &rarr; red &rarr; black)
+
+### Other Features
+
+- User login.
+- Save code snippets.
+- Load code snippets.
+- Estimated Time Complexity in 'O' Notation.
+- Estimated Space Complexity in 'O' Notation.
+- Premade sample programs listing.
